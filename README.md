@@ -42,7 +42,7 @@ The model contains 76320 weights and 106 biases. We used valid padding in each l
 
 The parameters of the network were optimized using the adam optimizer. We started with a smaller data set (containing four laps of Track 1 (2 laps in each direction) and one lap of Track 2). The resulting model(after training for 20 epochs) could drive on most parts of the track but failed at difficult positions. We added some more data driving these difficult sections as well as some recovery trips. Using the new data, the model had improved but still showed some flaws at certain parts of the track (it could complete a round but not perfectly). We decided to drive 6 additional laps on Track 1 (3 for each direction) to enrich the  training data. We used the weights of the previous model as initialization and trained on the complete data set. The performance of the model had improved but at one point of the track it was still unsatisfactory. We created a really small data set driving only this specific part and presented the model with this small set (using a very small learning rate). After a few iterations the model learned to drive the last part correctly and kept its performance on the rest of the track. 
 
-**Remark:** The model is also capable of driving on track 2 (see video2.mp4).
+**Remark:** The model is also capable of driving on Track 2 (see video2.mp4).
 
 The complete data set consisted of ~20000 training examples and ~50000 validation examples. Beside the images from the cameras we also used the flipped verions and changed the sign of the corresponding steering angle. The image flipping is carried out by the data generator process which is performed on the CPU, before the data is passed to the GPU for training.
 
