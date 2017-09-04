@@ -54,5 +54,5 @@ Left camera             |  Center camera | Right camera
 
 # Discussion
 
-The model is capable of driving on Track 1 and Track2. However, there are several drawbacks. First, it doesn't genaralize very well, e.g. using  different graphic settings for the simulator or forcing it off road using manual input shows its limitations. Overall, the training process was to specific with the goal to force one specific behaviour (complete Track 1). For a more general model, more training data should be collected and more compute power + time should be invested.
+The model is capable of driving on Track 1 and Track 2. However, there are several drawbacks. First, it doesn't genaralize very well, e.g. using  different graphic settings for the simulator or forcing it off road using manual input shows its limitations. Overall, the training process was to specific with the goal to force one specific behaviour (complete Track 1). For a more general model, more training data should be collected and more compute power + time should be invested.
 
