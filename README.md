@@ -44,7 +44,7 @@ The parameters of the network were optimized using the adam optimizer. We starte
 
 **Remark:** The model is also capable of driving on Track 2 (see video2.mp4).
 
-The complete data set consisted of ~20000 training examples and ~50000 validation examples. Beside the images from the cameras we also used the flipped verions and changed the sign of the corresponding steering angle. The image flipping is carried out by the data generator process which is performed on the CPU, before the data is passed to the GPU for training.
+The complete data set consisted of ~200000 training examples and ~50000 validation examples. Beside the images from the cameras we also used the flipped verions and changed the sign of the corresponding steering angle. The image flipping is carried out by the data generator process which is performed on the CPU, before the data is passed to the GPU for training.
 
 
 Left camera             |  Center camera | Right camera
